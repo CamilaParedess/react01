@@ -34,6 +34,11 @@
     margin: 15px;
   }
   
+  .rojo {
+    color: rgb(56, 0, 146);
+  }
+  
+
   .NavBar-navLinks ul li a:hover {
     text-decoration: underline;
     text-decoration-thickness: 2px;

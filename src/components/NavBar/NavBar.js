@@ -1,31 +1,38 @@
 import "./NavBar.css";
 import logo from "../../logo.svg";
 import CartWidget from "../CartWidget/CartWidget";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function NavBar() {
     return (
         <div className="NavBar-container">
-          <a href="/">
+          <Link to={"/"}>
             <img src={logo} className="NavBar-logo" alt="logo" />
-          </a>
+            </Link>
           <div className="NavBar-navLinks">
             <ul>
               <li>
               <NavLink
-              to={"/"}
-              end
+              to={"category/heladera"}
               style={({ isActive }) => (isActive ? { color: "rgb(56, 0, 146)" } : {})}
             >
-              Home
+              Heladeras
             </NavLink>
               </li>
               <li>
               <NavLink
-              to={"/products"}
+              to={"category/licuadora"}
               style={({ isActive }) => (isActive ? { color: "rgb(56, 0, 146)" } : {})}
             >
-              Productos
+              Licuadoras
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to={"category/lavarropas"}
+              style={({ isActive }) => (isActive ? { color: "rgb(56, 0, 146" } : {})}
+            >
+              Lavarropas
             </NavLink>
               </li>
               <li>

@@ -1,5 +1,5 @@
 import "./NavBar.css";
-import logo from "../../logo.svg";
+/* import logo from "../../logo.svg"; */
 import CartWidget from "../CartWidget/CartWidget";
 import { Link, NavLink } from "react-router-dom";
 
@@ -7,32 +7,32 @@ function NavBar() {
     return (
         <div className="NavBar-container">
           <Link to={"/"}>
-            <img src={logo} className="NavBar-logo" alt="logo" />
+            <img src="https://www.maybelline.com.ar/~/media/mny/global/header/logo_v3.png" className="NavBar-logo" alt="logo" />
             </Link>
           <div className="NavBar-navLinks">
             <ul>
               <li>
               <NavLink
-              to={"category/heladera"}
+              to={"category/Labial"}
               style={({ isActive }) => (isActive ? { color: "rgb(56, 0, 146)" } : {})}
             >
-              Heladeras
+              Labiales
             </NavLink>
               </li>
               <li>
               <NavLink
-              to={"category/licuadora"}
+              to={"category/Base"}
               style={({ isActive }) => (isActive ? { color: "rgb(56, 0, 146)" } : {})}
             >
-              Licuadoras
+              Bases
             </NavLink>
           </li>
           <li>
             <NavLink
-              to={"category/lavarropas"}
+              to={"category/Rimmel"}
               style={({ isActive }) => (isActive ? { color: "rgb(56, 0, 146" } : {})}
             >
-              Lavarropas
+              Rimmel
             </NavLink>
               </li>
               <li>
